@@ -10,7 +10,7 @@ spring:
           environment:
             spring:
               rabbitmq:
-                host: rabbitmq.dev.air.c.transoft.bo #config ip rabbitmq
+                host: 127.0.0.1
                 port: 5672
                 username: admin
                 password: admin
