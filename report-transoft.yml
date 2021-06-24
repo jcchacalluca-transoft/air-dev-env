@@ -10,7 +10,7 @@ spring:
           environment:
             spring:
               rabbitmq:
-                host: 127.0.0.1 #config ip rabbitmq
+                host: rabbitmq.dev.air.c.transoft.bo #config ip rabbitmq
                 port: 5672
                 username: admin
                 password: admin
@@ -20,7 +20,7 @@ spring:
 # Datasource and JPA configuration to be used for using the same tokenstore as the authorization server for
 # the defined resource server. Note that there can't be 2 different root nodes, so datasource falls under the "spring" node.
   datasource:
-    url: jdbc:mysql://localhost:3306/report
+    url: jdbc:mysql://192.168.107.35:3306/report
     username: root
     password: mysql
     driver-class: com.mysql.jdbc.Driver
