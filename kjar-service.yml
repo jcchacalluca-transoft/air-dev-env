@@ -39,18 +39,24 @@ logging:
 # config deploy jkar kie-server
 kie:
   #172.16.0.104 ip public
-  server: http://172.16.0.104:8080/kie-server/services/rest/server
+  server: http://brules.c.transoft.bo:8090/kie-server/services/rest/server
   user: kieserver
   pass: kieserver,.!
   projects:
-    fare-engine: /home/debian/fare-engine
+    fare-engine: fare-engine-devel@/home/debian/fare-engine
     other-container: /path/to/project
+  versions:
+    fare-engine: 0
+    other-container: 0.0.2
   goals:
     - clean
     - deploy
+  profiles:
+    - development
+
 # Note: import disable mode product and active mode Dev
 server:
-  port: 8092
+  port: 8090
 # config eureka
 eureka:
   client:
