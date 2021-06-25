@@ -43,7 +43,6 @@ spring:
                 password: admin
 # config Oauth
 serviceOauth:
-  oauth: http://oauth-service/uaa
   login: http://oauth-service/uaa/oauth/token?client_id=
   refresh: http://oauth-service/uaa/oauth/token?grant_type=refresh_token&refresh_token=
   logout: http://oauth-service/uaa/api/logout-up
@@ -90,7 +89,7 @@ zuul:
   host:
     connect-timeout-millis: 180000
     socket-timeout-millis: 180000
-  sensitiveHeaders: Cookie,Set-Cookie,Authentication
+  sensitiveHeaders:      #Cookie,Set-Cookie,Authentication
   #ignored-services: '*'
   #ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
   #ignoredPatterns: /**/api/**
