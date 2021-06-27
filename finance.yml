@@ -90,10 +90,10 @@ spring:
 #
   jpa:
     database-platform: org.hibernate.dialect.MySQLDialect
-    show-sql: true
+    show-sql: false
     hibernate:
       #ddl-auto: create
-      show_sql: true
+      show_sql: false
       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
 # Logging settings.
 logging:
