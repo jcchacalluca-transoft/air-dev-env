@@ -41,6 +41,9 @@ spring:
                 port: 5672
                 username: admin
                 password: admin
+  main:
+    allow-circular-references: true
+
   #profiles: test
   #jmx:
     #enabled: false
