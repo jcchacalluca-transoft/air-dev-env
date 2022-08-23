@@ -96,6 +96,21 @@ spring:
       #ddl-auto: create
       show_sql: false
       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+
+mail:
+  protocol: smtp
+  smtp:
+    host: mailsrv.transoft.bo
+    port: 25
+  support:
+    username: ecojet@mail.transoft.bo
+    password: 3coJJ3T
+    source: ecojet@mail.transoft.bo
+  notify:
+    - jcchacalluca@transoft.bo
+    - mail@mail.com
+    - mail@mail.bo
+
 # Logging settings.
 logging:
 
