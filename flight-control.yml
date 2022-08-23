@@ -70,11 +70,10 @@ spring:
 logging:
 
   # The default level of all loggers. Can be OFF, ERROR, WARN, INFO, DEBUG, TRACE, or ALL.
-  level: 
+  level:
     com.transoft.completeair: DEBUG
     org.hibernate: INFO
-
-  # Logger-specific levels.
+    org.springframework.context=DEBUG
   loggers:
 
     # Redirects SQL logs to a separate file
