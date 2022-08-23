@@ -73,7 +73,8 @@ logging:
   level:
     com.transoft.completeair: DEBUG
     org.hibernate: INFO
-    org.springframework.context=DEBUG
+    org.springframework.context: DEBUG
+
   loggers:
 
     # Redirects SQL logs to a separate file
