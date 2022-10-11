@@ -85,7 +85,7 @@ logging:
 
 # Note: import disable mode product and active mode Dev
 server:
-  port: 8090
+  port: 8093
 #spring:
   #application:
     #name: cargo-control
